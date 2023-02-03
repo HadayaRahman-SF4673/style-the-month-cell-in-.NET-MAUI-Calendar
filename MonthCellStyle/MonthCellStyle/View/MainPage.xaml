@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:calendar="clr-namespace:Syncfusion.Maui.Calendar;assembly=Syncfusion.Maui.Calendar"
+             xmlns:local="clr-namespace:MonthCellStyle"
+             x:Class="MonthCellStyle.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:CalendarViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <calendar:SfCalendar x:Name="calendar"
+                             SelectionBackground="#FEB8B8"
+                             SelectionShape="Rectangle">
+            <calendar:SfCalendar.MonthView>
+                <calendar:CalendarMonthView Background="#3F51B6"
+                                            TodayBackground="#FFFFFF"
+                                            TrailingLeadingDatesBackground="#CCD5F0"
+                                            WeekendDatesBackground="LightGray"
+                                            WeekendDays="{Binding WeekEndDayList}">
+                    <calendar:CalendarMonthView.TextStyle>
+                        <calendar:CalendarTextStyle TextColor="#FFFFFF"
+                                                    FontAttributes="Bold,Italic"
+                                                    FontSize="20" />
+                    </calendar:CalendarMonthView.TextStyle>
+                    <calendar:CalendarMonthView.TodayTextStyle>
+                        <calendar:CalendarTextStyle TextColor="Blue"
+                                                    FontAttributes="Bold,Italic"
+                                                    FontSize="20" />
+                    </calendar:CalendarMonthView.TodayTextStyle>
+                    <calendar:CalendarMonthView.WeekendDatesTextStyle>
+                        <calendar:CalendarTextStyle TextColor="Gray"
+                                                    FontAttributes="Bold,Italic"
+                                                    FontSize="20" />
+                    </calendar:CalendarMonthView.WeekendDatesTextStyle>
+                    <calendar:CalendarMonthView.TrailingLeadingDatesTextStyle>
+                        <calendar:CalendarTextStyle TextColor="Gray"
+                                                    FontAttributes="Bold,Italic"
+                                                    FontSize="20" />
+                    </calendar:CalendarMonthView.TrailingLeadingDatesTextStyle>
+                    <calendar:CalendarMonthView.HeaderView>
+                        <calendar:CalendarMonthHeaderView Background="#C2FCF8"
+                                                          Height="50"
+                                                          TextFormat="ddd">
+                            <calendar:CalendarMonthHeaderView.TextStyle>
+                                <calendar:CalendarTextStyle TextColor="#1A73E8"
+                                                            FontAttributes="Bold,Italic"
+                                                            FontSize="20" />
+                            </calendar:CalendarMonthHeaderView.TextStyle>
+                        </calendar:CalendarMonthHeaderView>
+                    </calendar:CalendarMonthView.HeaderView>
+                </calendar:CalendarMonthView>
+            </calendar:SfCalendar.MonthView>
+        </calendar:SfCalendar>
+    </ContentPage.Content>
+
+</ContentPage>
