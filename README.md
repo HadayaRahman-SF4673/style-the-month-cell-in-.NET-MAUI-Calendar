@@ -1,7 +1,8 @@
-# How to style the month cell in .NET MAUI Calendar (SfCalendar)
+# How to Style Month Cells in the .NET MAUI Calendar (SfCalendar)
+
 This repository contains a sample to style the month cell in the [Syncfusion .NET MAUI Calendar](https://help.syncfusion.com/maui/calendar/getting-started) control.
 
-Please refer the KB through this link.
+Please refer the KB through this [link](https://www.syncfusion.com/kb/13894/how-to-style-month-cells-in-the-net-maui-calendar-sfcalendar).
 
 ## Syncfusion controls
 
