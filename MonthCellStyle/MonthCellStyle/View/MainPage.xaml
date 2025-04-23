@@ -17,6 +17,7 @@
                                             TodayBackground="#FFFFFF"
                                             TrailingLeadingDatesBackground="#CCD5F0"
                                             WeekendDatesBackground="LightGray"
+                                            x:DataType="local:CalendarViewModel"
                                             WeekendDays="{Binding WeekEndDayList}">
                     <calendar:CalendarMonthView.TextStyle>
                         <calendar:CalendarTextStyle TextColor="#FFFFFF"
